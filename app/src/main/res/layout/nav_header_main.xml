@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/logo"/>
+
+    <TextView
+            style="@style/BaseTextStyle.Title"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/login_slang_drawer"
+            android:textAllCaps="true"
+            android:textSize="@dimen/drawer_app_name_size"/>
+
+    <TextView
+            style="@style/BaseTextStyle.Title"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/tov_drawer"/>
+
+    <TextView
+            style="@style/BaseTextStyle.Title"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/city_drawer"/>
+
+    <View style="@style/HorizontalViewDivider"/>
+
+</LinearLayout>

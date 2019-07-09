@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/uslugi"
+            android:title="@string/nav_services" />
+
+    <item
+            android:id="@+id/nav_price"
+            android:icon="@drawable/price"
+            android:title="@string/nav_price" />
+
+    <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/otzivy"
+            android:title="@string/nav_feedback" />
+
+    <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/kontakty"
+            android:title="@string/nav_contacts" />
 
 </menu>

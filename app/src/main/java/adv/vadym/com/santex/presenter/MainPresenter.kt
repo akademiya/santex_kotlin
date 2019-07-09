@@ -1,5 +1,7 @@
-package adv.vadym.com.santex
+package adv.vadym.com.santex.presenter
 
+import adv.vadym.com.santex.AndroidApplication
+import adv.vadym.com.santex.view.impl.MainActivity
 import adv.vadym.com.santex.mvp.BasePresenter
 import android.app.Application
 

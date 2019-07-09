@@ -1,8 +1,8 @@
 package adv.vadym.com.santex.di.component
 
 import adv.vadym.com.santex.AndroidApplication
-import adv.vadym.com.santex.MainActivity
-import adv.vadym.com.santex.MainPresenter
+import adv.vadym.com.santex.view.impl.MainActivity
+import adv.vadym.com.santex.presenter.MainPresenter
 import adv.vadym.com.santex.di.module.AppModule
 import dagger.Component
 
