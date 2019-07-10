@@ -3,13 +3,19 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="accent_darker">#689F38</color>
 
     <color name="white">#FFF</color>
     <color name="text_black_color">#8B000000</color>
+    <color name="text_primary_dark">#DF000000</color> <!--87% of black-->
+    <color name="text_secondary_dark">#8B000000</color> <!--54% of black-->
+    <color name="text_link_color">#365CFF</color>
     <color name="inactive_color">#A09E9E</color>
     <color name="divider_color">#1E000000</color>
+    <color name="negative_button_color">#DF000000</color>
 
     <color name="toolbar_color">#011248</color>
     <color name="background_color">#E3E5E5</color>
     <color name="call_button_color">#D33131</color>
+    <color name="call_button_pressed_color">#E15C5E</color>
 </resources>

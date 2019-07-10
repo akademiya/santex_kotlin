@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="adv.vadym.com.santex">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
             android:name=".AndroidApplication"
             android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
+            android:icon="@mipmap/santehnica"
             android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher"
             android:supportsRtl="false"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".view.impl.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
