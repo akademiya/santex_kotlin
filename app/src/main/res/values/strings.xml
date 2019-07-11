@@ -13,13 +13,36 @@
     <string name="nav_feedback">Feedback</string>
     <string name="nav_contacts">Contacts</string>
 
-    <string name="login_slang_drawer">Сантехнические работы любой сложности</string>
+    <string name="login_slang_drawer">Сантехнические работы</string>
     <string name="tov_drawer">ТОВ "Сантэкс АСС"</string>
-    <string name="city_drawer">Kiev</string>
+    <string name="city_drawer">Киев</string>
     <string name="view_services">Services</string>
     <string name="view_price">Price</string>
     <string name="view_feedback">Feedback</string>
     <string name="view_contacts">Contacts</string>
+
+    <!--services-->
+    <string name="our_service">услуги</string>
+    <string name="our_price">способ оплаты</string>
+    <string name="pay_card">Оплата картой</string>
+    <string name="pay_cash">Оплата наличными</string>
+    <string name="call_santehnic">Вызвать сантехника</string>
+    <string name="reserve_date">Зарезервируйте дату, получите скидку 10%</string>
+    <string name="text_service1">Установка бойлера\nУстановка унитаза\nУстановка счетчиков\nУстановка смесителей</string>
+    <string name="text_service2">Замена труб канализации\nЗамена водопроводных труб\nЗамена унитаза</string>
+    <string name="text_service3">Прочистка канализации</string>
+    <string name="text_service4">Реставрация ванн</string>
+    <string name="call_master">Вызов мастера</string>
+
+    <!--price-->
+    <string name="pr_ustanovka">Установка сантехнического оборудования в ванной комнате и кухне</string>
+    <string name="pr_demontaz">Демонтаж сантехнического оборудования</string>
+    <string name="pr_montaz_voda">Монтаж труб водоснабжения</string>
+    <string name="pr_montaz_kanal">Монтаж труб канализации</string>
+    <string name="pr_montaz_otoplenie">Монтаж систем отопления</string>
+    <string name="pr_shtroblenie">Штробление стен под трубы отопления, водопровода, канализации</string>
+    <string name="pr_prochistka">Прочистка канализации</string>
+    <string name="pr_dop">Дополнительные услуги</string>
 
     <!--contacts-->
     <string name="tel_life">+38(063) 77 12 972</string>
@@ -32,9 +55,10 @@
 
     <!--dialog-->
     <string name="cancel">Cancel</string>
-    <string name="change">Change</string>
+    <string name="send">Send</string>
     <string name="name">Name</string>
     <string name="phone">Phone</string>
     <string name="merchant_email">Email</string>
     <string name="message">Enter your message</string>
+    <string name="time_to_call">Time to call</string> //Удобное время для звонка
 </resources>

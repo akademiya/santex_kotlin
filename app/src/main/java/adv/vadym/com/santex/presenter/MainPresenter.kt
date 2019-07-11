@@ -20,6 +20,6 @@ class MainPresenter(mainView: MainActivity, applicationComponent: Application) :
     }
 
     fun onCallToSantehnicButtonClick() {
-        view?.changeButtonColor()
+        view?.dialogCreateMessageOrder()
     }
 }
