@@ -58,7 +58,7 @@
                     style="@style/BaseTextStyle.TitleMain"
                     android:layout_width="match_parent"
                     android:text="@string/our_service"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginBottom="8dp"
                     android:layout_height="wrap_content"/>
 
@@ -119,7 +119,8 @@
             <TextView
                     style="@style/BaseTextStyle.TitleMain"
                     android:layout_width="match_parent"
-                    android:text="@string/our_price"
+                    android:text="@string/pay_price"
+                    android:layout_marginTop="40dp"
                     android:layout_marginBottom="8dp"
                     android:layout_height="wrap_content"/>
 

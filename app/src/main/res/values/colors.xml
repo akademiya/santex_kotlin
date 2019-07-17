@@ -18,4 +18,5 @@
     <color name="background_color">#E3E5E5</color>
     <color name="call_button_color">#D33131</color>
     <color name="call_button_pressed_color">#E15C5E</color>
+    <color name="item_expand_color">#F9FBE7</color>
 </resources>

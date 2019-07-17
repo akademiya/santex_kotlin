@@ -12,7 +12,6 @@ class PricePresenter(view: PriceActivity, applicationComponent: Application) : B
     }
 
     override fun onBindView() {
-
     }
 
     override fun onUnbindView() {

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="@color/item_expand_color"
+                android:layout_height="72dp">
+
+    <TextView
+            android:id="@+id/tv_name_service"
+            tools:text="bla-bla-bla"
+            style="@style/BaseTextStyle.ItemName"
+            android:layout_toStartOf="@+id/tv_metrics"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tv_metrics"
+            tools:text="шт"
+            android:layout_centerVertical="true"
+            style="@style/BaseTextStyle.ItemName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="110dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tv_value"
+            tools:text="20"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            style="@style/BaseTextStyle.ItemName"
+            android:layout_marginEnd="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <View
+            android:id="@+id/item_divider"
+            style="@style/HorizontalViewDivider"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

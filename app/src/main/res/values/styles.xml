@@ -28,6 +28,11 @@
         <item name="android:textSize">@dimen/text_title_size</item>
     </style>
 
+    <style name="BaseTextStyle.ItemName">
+        <item name="android:textColor">@color/text_primary_dark</item>
+        <item name="android:textSize">@dimen/text_item_size</item>
+    </style>
+
     <style name="BaseTextStyle.TitleMain">
         <item name="android:textColor">@color/text_primary_dark</item>
         <item name="android:textSize">@dimen/text_large_size</item>
@@ -44,7 +49,7 @@
     <style name="HorizontalViewDivider" parent="AppTheme">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
-        <item name="android:color">@color/divider_color</item>
+        <item name="android:background">@color/divider_color</item>
     </style>
 
     <style name="SendMessageButton" parent="Widget.AppCompat.Button.Borderless">

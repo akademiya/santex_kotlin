@@ -8,33 +8,34 @@
     <string name="google_maps_key">google_maps_key</string>
 
     <!--menu-->
-    <string name="nav_services">Services</string>
-    <string name="nav_price">Price</string>
-    <string name="nav_feedback">Feedback</string>
-    <string name="nav_contacts">Contacts</string>
+    <string name="nav_services">Услуги</string>
+    <string name="nav_price">Цены</string>
+    <string name="nav_feedback">Отзывы</string>
+    <string name="nav_contacts">Контакты</string>
 
     <string name="login_slang_drawer">Сантехнические работы</string>
     <string name="tov_drawer">ТОВ "Сантэкс АСС"</string>
     <string name="city_drawer">Киев</string>
-    <string name="view_services">Services</string>
-    <string name="view_price">Price</string>
-    <string name="view_feedback">Feedback</string>
-    <string name="view_contacts">Contacts</string>
+    <string name="view_services">Услуги</string>
+    <string name="view_price">Цены</string>
+    <string name="view_feedback">Отзывы</string>
+    <string name="view_contacts">Контакты</string>
 
     <!--services-->
     <string name="our_service">услуги</string>
-    <string name="our_price">способ оплаты</string>
+    <string name="pay_price">способ оплаты</string>
     <string name="pay_card">Оплата картой</string>
     <string name="pay_cash">Оплата наличными</string>
     <string name="call_santehnic">Вызвать сантехника</string>
     <string name="reserve_date">Зарезервируйте дату, получите скидку 10%</string>
     <string name="text_service1">Установка бойлера\nУстановка унитаза\nУстановка счетчиков\nУстановка смесителей</string>
-    <string name="text_service2">Замена труб канализации\nЗамена водопроводных труб\nЗамена унитаза</string>
+    <string name="text_service2">Замена труб канализации\nЗамена водопровода\nЗамена унитаза\n</string>
     <string name="text_service3">Прочистка канализации</string>
     <string name="text_service4">Реставрация ванн</string>
     <string name="call_master">Вызов мастера</string>
 
     <!--price-->
+    <string name="our_price">наши цены</string>
     <string name="pr_ustanovka">Установка сантехнического оборудования в ванной комнате и кухне</string>
     <string name="pr_demontaz">Демонтаж сантехнического оборудования</string>
     <string name="pr_montaz_voda">Монтаж труб водоснабжения</string>
@@ -43,6 +44,136 @@
     <string name="pr_shtroblenie">Штробление стен под трубы отопления, водопровода, канализации</string>
     <string name="pr_prochistka">Прочистка канализации</string>
     <string name="pr_dop">Дополнительные услуги</string>
+    <string name="pr_service_title1">Установка сантехнического оборудования в ванной комнате и кухне</string>
+    <string name="pr_service_title2">Демонтаж сантехнического оборудования</string>
+    <string name="pr_service_title3">Монтаж труб водоснабжения</string>
+    <string name="pr_service_title4">Монтаж труб канализации</string>
+    <string name="pr_service_title5">Монтаж систем отопления</string>
+    <string name="pr_service_title6">Штробление стен под трубы отопления, водопровода, канализации</string>
+    <string name="pr_service_title7">Прочистка канализации</string>
+    <string name="pr_service_title8">Дополнительные услуги</string>
+
+    <string name="pr_service_name">Наименование работ</string>
+    <string name="pr_service_name1">Установка ванны металлической</string>
+    <string name="pr_service_name2">Установка ванны чугунной</string>
+    <string name="pr_service_name3">Установка ванны акриловой</string>
+    <string name="pr_service_name4">Установка ванны с гидромассажем</string>
+    <string name="pr_service_name5">Установка душевой кабины (обычной сложности)</string>
+    <string name="pr_service_name6">Установка душевой кабины (повышенная сложность)</string>
+    <string name="pr_service_name7">Установка душевой кабины (с гидромассажем)</string>
+    <string name="pr_service_name8">Демонтаж раздвижной шторы на ванну (пластиковая)</string>
+    <string name="pr_service_name9">Установка штанги для душа</string>
+    <string name="pr_service_name10">Установка умывальника</string>
+    <string name="pr_service_name11">Установка умывальника повышенной сложности</string>
+    <string name="pr_service_name12">Установка умывальника «тюльпан»</string>
+    <string name="pr_service_name13">Установка смесителя для ванны</string>
+    <string name="pr_service_name14">Установка смесителя для умывальника</string>
+    <string name="pr_service_name15">Установка сифона для ванны</string>
+    <string name="pr_service_name16">Установка сифона для умывальника</string>
+    <string name="pr_service_name17">Установка унитаза обычного</string>
+    <string name="pr_service_name18">Установка унитаза с инсталляцией</string>
+    <string name="pr_service_name19">Ремонт сливной системы бачка</string>
+    <string name="pr_service_name20">Замена бачка унитаза</string>
+    <string name="pr_service_name21">Установка биде</string>
+    <string name="pr_service_name22">Установка писсуара</string>
+    <string name="pr_service_name23">Замена резиновых прокладок для смесителя</string>
+    <string name="pr_service_name24">Монтаж сушки для полотенца</string>
+    <string name="pr_service_name25">Перенос сушки для полотенца</string>
+    <string name="pr_service_name26">Установка водонагревателя (бойлера), без врезки в систему</string>
+    <string name="pr_service_name27">Монтаж газовой колонки</string>
+    <string name="pr_service_name28">Монтаж гофры</string>
+    <string name="pr_service_name29">Установка посудомоечной, стиральной машинки</string>
+
+    <string name="pr_service_name30">Демонтаж ванной металической</string>
+    <string name="pr_service_name31">Демонтаж ванной чугунной</string>
+    <string name="pr_service_name32">Демонтаж ванной акриловой</string>
+    <string name="pr_service_name33">Демонтаж ванной с гидромассажем</string>
+    <string name="pr_service_name34">Демонтаж душевой кабины (обычной)</string>
+    <string name="pr_service_name35">Демонтаж душевой кабины (гидромассажной)</string>
+    <string name="pr_service_name36">Демонтаж умывальника, раковины</string>
+    <string name="pr_service_name37">Демонтаж мойки кухонной</string>
+    <string name="pr_service_name38">Демонтаж смесителя</string>
+    <string name="pr_service_name39">Демонтаж сифона</string>
+    <string name="pr_service_name40">Демонтаж бойлера (водонагревателя)</string>
+    <string name="pr_service_name41">Демонтаж полотенцесушителя</string>
+    <string name="pr_service_name42">Демонтаж радиатора отопления</string>
+    <string name="pr_service_name43">Демонтаж гофры</string>
+    <string name="pr_service_name44">Демонтаж унитаза, биде, писуара</string>
+
+    <string name="pr_service_name45">Монтаж водопровода пластикавыми трубами</string>
+    <string name="pr_service_name46">Монтаж водопровода металопластиковыми трубами</string>
+    <string name="pr_service_name47">Монтаж водопровода стальными трубами</string>
+    <string name="pr_service_name48">Монтаж водопровода медными трубами(твёрдый припой)</string>
+    <string name="pr_service_name49">Монтаж водопровода медными трубами(мягкий припой)</string>
+    <string name="pr_service_name50">Монтаж трассы водопровода</string>
+    <string name="pr_service_name51">Установка счётчика воды</string>
+    <string name="pr_service_name52">Монтаж насосной станции</string>
+    <string name="pr_service_name53">Замена стояка водоснабжения (без демонтажа)</string>
+    <string name="pr_service_name54">Замена коренного крана</string>
+    <string name="pr_service_name55">Демонтаж стальных труб водопровода)</string>
+    <string name="pr_service_name56">Демонтаж металлопластиковых труб водопровода</string>
+    <string name="pr_service_name57">Демонтаж пластиковых труб водопровода</string>
+    <string name="pr_service_name58">Замена фильтров тонкой и грубой очистки</string>
+    <string name="pr_service_name59">Замена фильтрующего элемента</string>
+
+    <string name="pr_service_name60">Монтаж пластиковых труб канализации (без штробления)</string>
+    <string name="pr_service_name61">Монтаж канализационных труб ПВХ (без штробления)</string>
+    <string name="pr_service_name62">Замена стояка канализации в квартире (пластиковый на пластиковый стояк)</string>
+    <string name="pr_service_name63">Замена стояка канализации в квартире (чугунный на пластиковый)</string>
+    <string name="pr_service_name64">Монтаж канализационной насосной установки</string>
+
+    <string name="pr_service_name65">Монтаж трассы отопления</string>
+    <string name="pr_service_name66">Установка радиатора отопления</string>
+    <string name="pr_service_name67">Установка радиатора на старое месть без подгонки труб</string>
+    <string name="pr_service_name68">Монтаж внутрипольного конвектора (без ниши)</string>
+    <string name="pr_service_name69">Замена стояка отопления</string>
+    <string name="pr_service_name70">Установка котла газового (навесного)</string>
+    <string name="pr_service_name71">Установка котла газового (напольного)</string>
+    <string name="pr_service_name72">Монтаж гребёнок</string>
+    <string name="pr_service_name73">Установка теплого пола</string>
+    <string name="pr_service_name74">Монтаж теплых стен</string>
+    <string name="pr_service_name75">Монтаж котельной</string>
+    <string name="pr_service_name76">Обвязка котельной загородного дома</string>
+    <string name="pr_service_name77">Перепаковка батареи отопления</string>
+    <string name="pr_service_name78">Установка насоса циркуляции</string>
+    <string name="pr_service_name79">Установка регулятора давления</string>
+    <string name="pr_service_name80">Установка регулятора температуры</string>
+    <string name="pr_service_name81">Изготовление ниши под шкаф коллектора (кирпич, бетон)</string>
+    <string name="pr_service_name82">Снятие заглушек и заполнение системы водой</string>
+    <string name="pr_service_name83">Нарезание резьбы на трубе</string>
+
+    <string name="pr_service_name84">Штробление под трубу стен из белого кирпича Ø16–20</string>
+    <string name="pr_service_name85">Штробление стен из белого кирпича под трубу Ø25</string>
+    <string name="pr_service_name86">Штробление стен из белого кирпича под трубу Ø32</string>
+    <string name="pr_service_name87">Штробленик стен из белого кирпеча под трубу Ø40</string>
+    <string name="pr_service_name88">Штробление стен из красного кирпича под трубу Ø16–20</string>
+    <string name="pr_service_name89">Штробление стен из красного кирпича под трубу Ø25</string>
+    <string name="pr_service_name90">Штробление стен из красного кирпича под трубу Ø32</string>
+    <string name="pr_service_name91">Штробленик стен из красного кирпеча под трубу Ø40</string>
+    <string name="pr_service_name92">Штробление стен из бетона под трубу Ø16–20</string>
+    <string name="pr_service_name93">Штробление стен из бетона под трубу Ø25</string>
+    <string name="pr_service_name94">Штробление стен из бетона под трубу Ø32</string>
+    <string name="pr_service_name95">Штробленик стен из бетона под трубу Ø40</string>
+
+    <string name="pr_service_name96">Прочистка труб тросом</string>
+    <string name="pr_service_name97">Машинная чистка (в т.ч. стояк)</string>
+
+    <string name="pr_service_name98">Сварочные роботы средней сложности</string>
+    <string name="pr_service_name99">Сварочные роботы высокой сложности</string>
+    <string name="pr_service_name100">Выезд специалиста и консультация</string>
+    <string name="pr_service_name101">Покупка материалов с мастером и клиентом</string>
+    <string name="pr_service_name102">Ложный вызов мастера</string>
+    <string name="pr_service_name103">Повторный выезд мастера по вине заказчика</string>
+
+    <string name="pr_metrics">ед.изм.</string>
+    <string name="pr_metrics_shtuk">шт.</string>
+    <string name="pr_metrics_tochka">тчк.</string>
+    <string name="pr_metrics_mp">м п</string>
+    <string name="pr_metrics_m">м</string>
+    <string name="pr_metrics_m2">м2</string>
+    <string name="pr_metrics_styk">стык</string>
+    <string name="pr_metrics_null">-</string>
+    <string name="pr_value">цена, грн.</string>
 
     <!--contacts-->
     <string name="tel_life">+38(063) 77 12 972</string>
@@ -50,15 +181,15 @@
     <string name="tel_kvs">+38(098) 51 28 713</string>
     <string name="tel_city">+38(044) 33 80 496</string>
     <string name="email">info@santex.kiev.ua</string>
-    <string name="send_message_button">send message button</string>
+    <string name="send_message_button">Оставьте нам сообщение</string>
     <string name="dialog_title">Оставьте нам свое сообщение</string>
 
     <!--dialog-->
-    <string name="cancel">Cancel</string>
-    <string name="send">Send</string>
-    <string name="name">Name</string>
-    <string name="phone">Phone</string>
+    <string name="cancel">отмена</string>
+    <string name="send">отправить</string>
+    <string name="name">Имя</string>
+    <string name="phone">Телефон</string>
     <string name="merchant_email">Email</string>
-    <string name="message">Enter your message</string>
-    <string name="time_to_call">Time to call</string> //Удобное время для звонка
+    <string name="message">Сообщение</string>
+    <string name="time_to_call">Удобное время для звонка</string>
 </resources>

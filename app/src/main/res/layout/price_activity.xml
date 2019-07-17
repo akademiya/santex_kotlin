@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
-              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_height="match_parent"
               android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
@@ -15,15 +17,28 @@
                 android:layout_height="match_parent">
 
             <TextView
-                    android:id="@+id/toolbar_title"
                     style="@style/BaseTextStyle.Title"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:text="@string/view_price"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"/>
 
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
+
+    <TextView
+            style="@style/BaseTextStyle.TitleMain"
+            android:layout_width="match_parent"
+            android:text="@string/our_price"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_price"
+            tools:listitem="@layout/item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 </LinearLayout>

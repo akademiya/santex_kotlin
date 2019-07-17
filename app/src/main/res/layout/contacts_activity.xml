@@ -15,15 +15,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            <TextView
-                    android:id="@+id/toolbar_title"
-                    style="@style/BaseTextStyle.Title"
+            <!--TODO: for land activity-->
+            <!--<TextView-->
+                    <!--style="@style/BaseTextStyle.Title"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="@string/view_contacts"-->
+                    <!--android:textColor="@color/white"/>-->
+
+            <View
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:text="@string/view_contacts"
-                    android:textColor="@color/white"/>
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/send_message_button"
+                    style="@style/SendMessageButton"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/send_message_button"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"/>
 
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
@@ -33,67 +46,44 @@
             android:layout_height="match_parent">
 
         <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
 
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginTop="16dp"
-                    android:orientation="vertical">
+            <TextView
+                    android:id="@+id/tv_life"
+                    style="@style/BaseTextStyle.Title"
+                    android:layout_marginBottom="18dp"
+                    android:textColor="@color/text_link_color"
+                    android:text="@string/tel_life"/>
+            <TextView
+                    android:id="@+id/tv_kvs"
+                    style="@style/BaseTextStyle.Title"
+                    android:layout_marginBottom="18dp"
+                    android:textColor="@color/text_link_color"
+                    android:text="@string/tel_kvs"/>
+            <TextView
+                    android:id="@+id/tv_mts"
+                    style="@style/BaseTextStyle.Title"
+                    android:layout_marginBottom="18dp"
+                    android:textColor="@color/text_link_color"
+                    android:text="@string/tel_mts"/>
+            <TextView
+                    android:id="@+id/tv_city"
+                    style="@style/BaseTextStyle.Title"
+                    android:layout_marginBottom="18dp"
+                    android:textColor="@color/text_link_color"
+                    android:text="@string/tel_city"/>
+            <TextView
+                    android:id="@+id/tv_email"
+                    style="@style/BaseTextStyle.Title"
+                    android:layout_marginBottom="18dp"
+                    android:textColor="@color/text_link_color"
+                    android:text="@string/email"/>
 
-                <TextView
-                        android:id="@+id/tv_life"
-                        style="@style/BaseTextStyle.Title"
-                        android:layout_marginBottom="18dp"
-                        android:textColor="@color/text_link_color"
-                        android:text="@string/tel_life"/>
-                <TextView
-                        android:id="@+id/tv_kvs"
-                        style="@style/BaseTextStyle.Title"
-                        android:layout_marginBottom="18dp"
-                        android:textColor="@color/text_link_color"
-                        android:text="@string/tel_kvs"/>
-                <TextView
-                        android:id="@+id/tv_mts"
-                        style="@style/BaseTextStyle.Title"
-                        android:layout_marginBottom="18dp"
-                        android:textColor="@color/text_link_color"
-                        android:text="@string/tel_mts"/>
-                <TextView
-                        android:id="@+id/tv_city"
-                        style="@style/BaseTextStyle.Title"
-                        android:layout_marginBottom="18dp"
-                        android:textColor="@color/text_link_color"
-                        android:text="@string/tel_city"/>
-                <TextView
-                        android:id="@+id/tv_email"
-                        style="@style/BaseTextStyle.Title"
-                        android:layout_marginBottom="18dp"
-                        android:textColor="@color/text_link_color"
-                        android:text="@string/email"/>
-
-            </LinearLayout>
-
-            <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/map"/>
-
-            <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-            <Button
-                    android:id="@+id/send_message_button"
-                    style="@style/SendMessageButton"
-                    android:text="@string/send_message_button"
-                    android:layout_marginBottom="16dp"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

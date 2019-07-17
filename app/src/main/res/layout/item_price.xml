@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="@color/background_color"
+                android:layout_height="@dimen/item_price_height">
+
+    <TextView
+            android:id="@+id/tv_name_service_title"
+            tools:text="bla-bla-bla"
+            style="@style/BaseTextStyle.Title"
+            android:layout_toStartOf="@+id/arrow_expand_item"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <ImageView
+            android:id="@+id/arrow_expand_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_expand_arrow"/>
+
+    <View
+            android:id="@+id/item_divider"
+            style="@style/HorizontalViewDivider"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
