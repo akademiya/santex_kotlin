@@ -18,6 +18,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+            <TextView
+                    style="@style/BaseTextStyle.Title"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/view_services"
+                    android:textColor="@color/white"/>
+
             <View
                     android:layout_width="0dp"
                     android:layout_weight="1"

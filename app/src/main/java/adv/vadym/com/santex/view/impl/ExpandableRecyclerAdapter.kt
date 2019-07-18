@@ -43,7 +43,7 @@ abstract class ExpandableRecyclerAdapter<T : ExpandableRecyclerAdapter.ListItem>
         }
 
         open fun bind(position: Int) {
-            arrow.rotation = (if (isExpanded(position)) 90 else 0).toFloat()
+            arrow.rotation = (if (isExpanded(position)) 180 else 0).toFloat()
         }
     }
 

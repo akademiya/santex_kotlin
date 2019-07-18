@@ -23,6 +23,7 @@
 
     <!--services-->
     <string name="our_service">услуги</string>
+    <string name="planiruete_remont">планируете ремонт?</string>
     <string name="pay_price">способ оплаты</string>
     <string name="pay_card">Оплата картой</string>
     <string name="pay_cash">Оплата наличными</string>
