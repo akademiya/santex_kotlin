@@ -8,7 +8,15 @@ import adv.vadym.com.santex.view.IContactsActivity
 import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
+import kotlinx.android.synthetic.main.call_master_dialog.*
 import kotlinx.android.synthetic.main.contacts_activity.*
+import kotlinx.android.synthetic.main.contacts_activity.view.*
+import kotlinx.android.synthetic.main.send_message_dialog.*
+import kotlinx.android.synthetic.main.send_message_dialog.et_message
+import kotlinx.android.synthetic.main.send_message_dialog.et_name
+import kotlinx.android.synthetic.main.send_message_dialog.et_phone
+import kotlinx.android.synthetic.main.send_message_dialog.view.*
+import kotlinx.android.synthetic.main.send_message_dialog.view.et_name
 
 class ContactsActivity : BaseActivity(), IContactsActivity {
 
@@ -56,3 +64,9 @@ class ContactsActivity : BaseActivity(), IContactsActivity {
         }
     }
 }
+
+//                val recipient = et_email.text.toString().trim()
+//                val name = et_name.text.toString().trim()
+//                val phone = et_phone.text.toString().trim()
+//                val message = et_message.text.toString().trim()
+//                presenter.dialogData(recipient, name, phone, message)

@@ -18,13 +18,16 @@ class ContactsPresenter(view: ContactsActivity, applicationComponent: Applicatio
         (applicationComponent as AndroidApplication).applicationComponent.inject(this)
     }
 
+    private var recipient = ""
+    private var name = ""
+    private var phone = ""
+    private var message = ""
+
     override fun onBindView() {
 
     }
 
-    override fun onUnbindView() {
-
-    }
+    override fun onUnbindView() {}
 
     fun onNumberTelClick(number: IContactsActivity.TelProvider) {
         when(number) {
@@ -50,6 +53,15 @@ class ContactsPresenter(view: ContactsActivity, applicationComponent: Applicatio
         val email = context.resources.getString(R.string.email)
         val sendIntent = Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"))
         sendIntent.data = Uri.parse("mailto:$email")
+//        sendIntent.putExtra(Intent.EXTRA_SUBJECT, name)
+//        sendIntent.putExtra(Intent.EXTRA_TEXT, "$name, $phone, $recipient\n$message")
         context.startActivity(Intent.createChooser(sendIntent, "Santex"))
+    }
+
+    fun dialogData(email: String, name: String, phone: String, message: String) {
+        this.recipient = email
+        this.name = name
+        this.phone = phone
+        this.message = message
     }
 }
