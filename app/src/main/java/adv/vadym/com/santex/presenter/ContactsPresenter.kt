@@ -11,6 +11,7 @@ import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import android.widget.Toast
 
 class ContactsPresenter(view: ContactsActivity, applicationComponent: Application) : BasePresenter<ContactsActivity>(view) {
 
@@ -52,10 +53,15 @@ class ContactsPresenter(view: ContactsActivity, applicationComponent: Applicatio
     fun onDialogSendButtonClick(context: Context) {
         val email = context.resources.getString(R.string.email)
         val sendIntent = Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"))
-        sendIntent.data = Uri.parse("mailto:$email")
 //        sendIntent.putExtra(Intent.EXTRA_SUBJECT, name)
 //        sendIntent.putExtra(Intent.EXTRA_TEXT, "$name, $phone, $recipient\n$message")
-        context.startActivity(Intent.createChooser(sendIntent, "Santex"))
+        sendIntent.data = Uri.parse("mailto:$email")
+        if (sendIntent.resolveActivity(context.packageManager) != null) {
+            context.startActivity(Intent.createChooser(sendIntent, "Santex"))
+        } else {
+            Toast.makeText(context, "На устройстве нет ни одного приложения, чтобы отправить сообщение на email", Toast.LENGTH_SHORT).show()
+        }
+
     }
 
     fun dialogData(email: String, name: String, phone: String, message: String) {
