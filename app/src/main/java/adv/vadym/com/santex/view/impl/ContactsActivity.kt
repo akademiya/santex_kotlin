@@ -4,19 +4,13 @@ import adv.vadym.com.santex.R
 import adv.vadym.com.santex.makePhoneCall
 import adv.vadym.com.santex.mvp.BaseActivity
 import adv.vadym.com.santex.presenter.ContactsPresenter
+import adv.vadym.com.santex.simpleTextWatcher
 import adv.vadym.com.santex.view.IContactsActivity
 import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
-import kotlinx.android.synthetic.main.call_master_dialog.*
+import android.widget.EditText
 import kotlinx.android.synthetic.main.contacts_activity.*
-import kotlinx.android.synthetic.main.contacts_activity.view.*
-import kotlinx.android.synthetic.main.send_message_dialog.*
-import kotlinx.android.synthetic.main.send_message_dialog.et_message
-import kotlinx.android.synthetic.main.send_message_dialog.et_name
-import kotlinx.android.synthetic.main.send_message_dialog.et_phone
-import kotlinx.android.synthetic.main.send_message_dialog.view.*
-import kotlinx.android.synthetic.main.send_message_dialog.view.et_name
 
 class ContactsActivity : BaseActivity(), IContactsActivity {
 
@@ -40,8 +34,8 @@ class ContactsActivity : BaseActivity(), IContactsActivity {
 
     override fun onPhoneNumberClick(number: IContactsActivity.TelProvider) {
         when(number) {
-            IContactsActivity.TelProvider.LIFE -> applicationContext.makePhoneCall(this, resources.getString(R.string.tel_life))
-            IContactsActivity.TelProvider.KVS ->  applicationContext.makePhoneCall(this, resources.getString(R.string.tel_kvs))
+            IContactsActivity.TelProvider.LIFE -> applicationContext.makePhoneCall(this, "0637712972")
+            IContactsActivity.TelProvider.KVS ->  applicationContext.makePhoneCall(this, "0985128713")
             IContactsActivity.TelProvider.MTS -> applicationContext.makePhoneCall(this, resources.getString(R.string.tel_mts))
             IContactsActivity.TelProvider.CITY -> applicationContext.makePhoneCall(this, resources.getString(R.string.tel_city))
         }
@@ -49,6 +43,15 @@ class ContactsActivity : BaseActivity(), IContactsActivity {
 
     override fun dialogCreateMessage() {
         val subView = LayoutInflater.from(this).inflate(R.layout.send_message_dialog, null)
+        val name = subView.findViewById<EditText>(R.id.et_name)
+        name.simpleTextWatcher { presenter.onNameInput(it) }
+
+        val phone = subView.findViewById<EditText>(R.id.et_phone)
+        phone.simpleTextWatcher { presenter.onPhoneInput(it) }
+
+        val message = subView.findViewById<EditText>(R.id.et_message)
+        message.simpleTextWatcher { presenter.onMessageInput(it) }
+
 
         AlertDialog.Builder(this).apply {
             setView(subView)
@@ -64,9 +67,3 @@ class ContactsActivity : BaseActivity(), IContactsActivity {
         }
     }
 }
-
-//                val recipient = et_email.text.toString().trim()
-//                val name = et_name.text.toString().trim()
-//                val phone = et_phone.text.toString().trim()
-//                val message = et_message.text.toString().trim()
-//                presenter.dialogData(recipient, name, phone, message)
