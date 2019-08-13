@@ -64,7 +64,7 @@ class ContactsPresenter(view: ContactsActivity, applicationComponent: Applicatio
         val email = context.resources.getString(R.string.email)
         val sendIntent = Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:$email"))
         sendIntent.putExtra(Intent.EXTRA_SUBJECT, name)
-        sendIntent.putExtra(Intent.EXTRA_TEXT, "$phone\n$message")
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "Мой номер: $phone\nМеня интересует: $message")
         if (sendIntent.resolveActivity(context.packageManager) != null) {
             context.startActivity(Intent.createChooser(sendIntent, "Santex"))
         } else {
