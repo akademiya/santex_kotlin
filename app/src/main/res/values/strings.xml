@@ -35,6 +35,14 @@
     <string name="text_service4">Реставрация ванн</string>
     <string name="call_master">Вызов мастера</string>
 
+    <!--error-->
+    <string name="no_name">Имя не может быть пустым</string>
+    <string name="no_phone">Заполните поле с номером телефона</string>
+    <string name="invalid_phone">Некорректно введен номер телефона. Проверьте формат ввода: 0хх1234567</string>
+    <string name="no_time">Введите удобное для Вас время звонка</string>
+    <string name="invalid_time">Некорректно введенное время. Проверьте формат ввода HH:mm. Например: 09:30</string>
+    <string name="no_message">Опишите вкратце задачу</string>
+
     <!--price-->
     <string name="our_price">наши цены</string>
     <string name="pr_ustanovka">Установка сантехнического оборудования в ванной комнате и кухне</string>

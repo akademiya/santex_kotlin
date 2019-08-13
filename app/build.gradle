@@ -12,8 +12,8 @@ android {
         applicationId "adv.vadym.com.santex"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 6
-        versionName "1.03 test"
+        versionCode 7
+        versionName "1.04"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }

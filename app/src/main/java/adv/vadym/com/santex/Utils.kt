@@ -13,6 +13,8 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.widget.EditText
+import java.text.DecimalFormat
+import java.text.MessageFormat
 
 fun Context.makePhoneCall(activity: Activity, number: String) : Boolean {
     return try {
@@ -49,3 +51,22 @@ fun EditText.simpleTextWatcher(watcher: (String) -> Unit) : TextWatcher =
         override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
         override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
     }.also { addTextChangedListener(it) }
+
+fun EditText.phoneFormatTextWatcher(watcher: (String) -> Unit) : TextWatcher =
+    object : TextWatcher {
+        override fun afterTextChanged(s: Editable?) {
+            if (s.isNullOrEmpty()) {return}
+            watcher(s.toString().formatPhoneNumber(s.toString().toLong()))
+        }
+        override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+        override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+    }.also { addTextChangedListener(it) }
+
+
+fun String.formatPhoneNumber(ph: Long) : String {
+    val decimalFormat = DecimalFormat("0000000000")
+    val rawString = decimalFormat.format(ph)
+    val phoneMsgFormat = MessageFormat("({0}) {1}-{2}")
+    val phoneNumArr = arrayOf(rawString.substring(0, 3), rawString.substring(3, 6), rawString.substring(6))
+    return phoneMsgFormat.format(phoneNumArr)
+}
