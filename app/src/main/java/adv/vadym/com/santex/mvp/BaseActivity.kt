@@ -8,6 +8,7 @@ import adv.vadym.com.santex.view.impl.PriceActivity
 import android.app.ProgressDialog
 import android.content.DialogInterface
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
@@ -19,6 +20,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.Toast
+import java.net.URL
 
 abstract class BaseActivity : AppCompatActivity(), IView, NavigationView.OnNavigationItemSelectedListener {
 
@@ -59,6 +61,21 @@ abstract class BaseActivity : AppCompatActivity(), IView, NavigationView.OnNavig
             R.id.nav_price -> startActivity(Intent(this, PriceActivity::class.java))
             R.id.nav_feedback -> startActivity(Intent(this, FeedbackActivity::class.java))
             R.id.nav_contacts -> startActivity(Intent(this, ContactsActivity::class.java))
+            R.id.nav_share -> {
+                val sharingIntent = Intent(Intent.ACTION_SEND)
+                val shareBody = getString(R.string.share_body)
+                sharingIntent.apply {
+                    type = "text/plain"
+                    putExtra(Intent.EXTRA_SUBJECT, "Santex")
+                    putExtra(Intent.EXTRA_TEXT, shareBody + URL("http", "play.google.com", "store/apps/details?id=adv.vadym.com.santex"))
+                }
+                startActivity(Intent.createChooser(sharingIntent, "Share:"))
+            }
+            R.id.nav_improve -> {
+                val sendIntent = Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:vadym.adv@gmail.com"))
+                sendIntent.putExtra(Intent.EXTRA_SUBJECT, "Для разработчика Santex")
+                startActivity(Intent.createChooser(sendIntent, "Для разработчика Santex:"))
+            }
         }
         drawer.findViewById<View>(R.id.drawer_layout) as DrawerLayout
         drawer.closeDrawer(GravityCompat.START)

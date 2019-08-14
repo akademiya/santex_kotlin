@@ -12,6 +12,10 @@
     <string name="nav_price">Цены</string>
     <string name="nav_feedback">Отзывы</string>
     <string name="nav_contacts">Контакты</string>
+    <string name="communicate">Contact</string>
+    <string name="share">Поделиться контактом</string>
+    <string name="improve">Замечания</string>
+    <string name="share_body">Хочу поделиться контактом сантехника. Делает все GOOD. Звони, если что.\n</string>
 
     <string name="login_slang_drawer">Сантехнические работы</string>
     <string name="tov_drawer">ТОВ "Сантэкс АСС"</string>
