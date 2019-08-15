@@ -200,6 +200,7 @@
     <!--dialog-->
     <string name="cancel">отмена</string>
     <string name="send">отправить</string>
+    <string name="ok">OK</string>
     <string name="name">Имя</string>
     <string name="phone">Телефон</string>
     <string name="merchant_email">Email</string>

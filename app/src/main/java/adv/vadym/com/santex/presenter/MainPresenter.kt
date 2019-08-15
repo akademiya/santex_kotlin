@@ -27,6 +27,10 @@ class MainPresenter(mainView: MainActivity, applicationComponent: Application) :
 
     override fun onUnbindView() {}
 
+    fun onReserveCalendarDateClick(date: String) {
+        view?.onReservedDate(date)
+    }
+
     fun onNameInput(name: String) {
         this.name = name
     }

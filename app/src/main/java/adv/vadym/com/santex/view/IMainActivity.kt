@@ -4,6 +4,7 @@ interface IMainActivity {
     fun dialogCreateMessageOrder()
     fun showInvalidValue(errorField: InvalidValue)
     fun showErrorByLostFocus(errorField: InvalidValue)
+    fun onReservedDate(date: String)
     fun onResetNameError()
     fun onResetPhoneError()
     fun onResetTimeError()
