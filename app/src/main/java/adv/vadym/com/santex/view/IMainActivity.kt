@@ -3,6 +3,7 @@ package adv.vadym.com.santex.view
 interface IMainActivity {
     fun dialogCreateMessageOrder()
     fun showInvalidValue(errorField: InvalidValue)
+    fun showErrorByLostFocus(errorField: InvalidValue)
     fun onResetNameError()
     fun onResetPhoneError()
     fun onResetTimeError()

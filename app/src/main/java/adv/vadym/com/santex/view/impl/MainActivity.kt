@@ -85,27 +85,36 @@ class MainActivity : BaseActivity(), IMainActivity {
         }
     }
 
-    override fun showInvalidValue(errorField: IMainActivity.InvalidValue) {
+    override fun showErrorByLostFocus(errorField: IMainActivity.InvalidValue) {
         when(errorField) {
             IMainActivity.InvalidValue.NO_NAME -> {
-//                Toast.makeText(this, resources.getString(R.string.no_name), Toast.LENGTH_LONG).show()
                 tilName.error = resources.getString(R.string.no_name)
             }
             IMainActivity.InvalidValue.NO_PHONE -> {
-//                Toast.makeText(this, resources.getString(R.string.no_phone), Toast.LENGTH_LONG).show()
                 tilPhone.error = resources.getString(R.string.no_phone)
+            }
+            IMainActivity.InvalidValue.NO_TIME -> {
+                tilTime.error = resources.getString(R.string.no_time)
+            }
+        }
+    }
+
+    override fun showInvalidValue(errorField: IMainActivity.InvalidValue) {
+        when(errorField) {
+            IMainActivity.InvalidValue.NO_NAME -> {
+                Toast.makeText(this, resources.getString(R.string.no_name), Toast.LENGTH_LONG).show()
+            }
+            IMainActivity.InvalidValue.NO_PHONE -> {
+                Toast.makeText(this, resources.getString(R.string.no_phone), Toast.LENGTH_LONG).show()
             }
             IMainActivity.InvalidValue.INVALID_PHONE -> {
                 Toast.makeText(this, resources.getString(R.string.invalid_phone), Toast.LENGTH_LONG).show()
-//                tilPhone.error = resources.getString(R.string.no_phone)
             }
             IMainActivity.InvalidValue.NO_TIME -> {
-//                Toast.makeText(this, resources.getString(R.string.no_time), Toast.LENGTH_LONG).show()
-                tilTime.error = resources.getString(R.string.no_time)
+                Toast.makeText(this, resources.getString(R.string.no_time), Toast.LENGTH_LONG).show()
             }
             IMainActivity.InvalidValue.INVALID_TIME -> {
                 Toast.makeText(this, resources.getString(R.string.invalid_time), Toast.LENGTH_LONG).show()
-//                tilTime.error = resources.getString(R.string.no_time)
             }
         }
     }

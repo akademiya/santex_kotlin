@@ -40,29 +40,32 @@ class MainPresenter(mainView: MainActivity, applicationComponent: Application) :
     }
 
     fun onValidateNameByFocus(hasFocus: Boolean) {
-        if (!hasFocus && name.isBlank()) {
-            isValidateSuccess = false
-            view?.showInvalidValue(IMainActivity.InvalidValue.NO_NAME)
+        isValidateSuccess = if (!hasFocus && name.isBlank()) {
+            view?.showErrorByLostFocus(IMainActivity.InvalidValue.NO_NAME)
+            false
         } else {
             view?.onResetNameError()
+            true
         }
     }
 
     fun onValidatePhoneByFocus(hasFocus: Boolean) {
-        if (!hasFocus && phone.isBlank() || phone == "(000) 000-0000") {
-            isValidateSuccess = false
-            view?.showInvalidValue(IMainActivity.InvalidValue.NO_PHONE)
+        isValidateSuccess = if (!hasFocus && phone.isBlank() || phone == "(000) 000-0000") {
+            view?.showErrorByLostFocus(IMainActivity.InvalidValue.NO_PHONE)
+            false
         } else {
             view?.onResetPhoneError()
+            true
         }
     }
 
     fun onValidateTimeByFocus(hasFocus: Boolean) {
-        if (!hasFocus && time.isBlank()) {
-            isValidateSuccess = false
-            view?.showInvalidValue(IMainActivity.InvalidValue.NO_TIME)
+        isValidateSuccess = if (!hasFocus && time.isBlank()) {
+            view?.showErrorByLostFocus(IMainActivity.InvalidValue.NO_TIME)
+            false
         } else {
             view?.onResetTimeError()
+            true
         }
     }
 
@@ -72,12 +75,12 @@ class MainPresenter(mainView: MainActivity, applicationComponent: Application) :
             isValidateSuccess = false
             return
         }
-        if (phone.isEmpty() || phone == "(000) 000-0000") {
+        if (phone.isEmpty()) {
             view?.showInvalidValue(IMainActivity.InvalidValue.NO_PHONE)
             isValidateSuccess = false
             return
         } else {
-            if (!validatePhone(phone)) {
+            if (!validatePhone(phone) || phone.startsWith("(000)")) {
                 view?.showInvalidValue(IMainActivity.InvalidValue.INVALID_PHONE)
                 isValidateSuccess = false
                 return
