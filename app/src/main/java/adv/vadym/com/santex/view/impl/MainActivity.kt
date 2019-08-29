@@ -26,7 +26,7 @@ class MainActivity : BaseActivity(), IMainActivity {
 
     private val c = Calendar.getInstance()
     private val prevDay: Int = c.get(Calendar.DAY_OF_MONTH)
-    private val prevMonth: Int = c.get(Calendar.MONTH)
+    private val prevMonth: Int = c.get(Calendar.MONTH) + 1
     private val prevYear: Int = c.get(Calendar.YEAR)
     private val d = Date(prevYear, prevMonth, prevDay)
 
@@ -40,7 +40,8 @@ class MainActivity : BaseActivity(), IMainActivity {
             presenter.onCallToSantehnicButtonClick()
         }
 
-        calendar.setOnDateChangeListener { _, year, month, day ->
+        calendar.setOnDateChangeListener { _, year, mon, day ->
+            val month = mon + 1
             if (changeCalendarDateUpdate(year, month, day)) {
                 AlertDialog.Builder(this).apply {
                     create()
