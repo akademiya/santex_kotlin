@@ -11,10 +11,10 @@
                 android:icon="@drawable/price"
                 android:title="@string/nav_price"/>
 
-        <item
-                android:id="@+id/nav_feedback"
-                android:icon="@drawable/otzivy"
-                android:title="@string/nav_feedback"/>
+<!--        <item-->
+<!--                android:id="@+id/nav_feedback"-->
+<!--                android:icon="@drawable/otzivy"-->
+<!--                android:title="@string/nav_feedback"/>-->
 
         <item
                 android:id="@+id/nav_contacts"

@@ -59,7 +59,7 @@ abstract class BaseActivity : AppCompatActivity(), IView, NavigationView.OnNavig
         when (menuItem.itemId) {
             R.id.nav_services -> startActivity(Intent(this, MainActivity::class.java))
             R.id.nav_price -> startActivity(Intent(this, PriceActivity::class.java))
-            R.id.nav_feedback -> startActivity(Intent(this, FeedbackActivity::class.java))
+//            R.id.nav_feedback -> startActivity(Intent(this, FeedbackActivity::class.java))
             R.id.nav_contacts -> startActivity(Intent(this, ContactsActivity::class.java))
             R.id.nav_share -> {
                 val sharingIntent = Intent(Intent.ACTION_SEND)
